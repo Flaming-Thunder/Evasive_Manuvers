@@ -1,0 +1,33 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:item_frame",
+            "modifier": [
+              {
+                "type": "minecraft:set_components",
+                "components": {
+                  "minecraft:item_name": {
+                    "text": "Falling Pit",
+                    "color": "gray"
+                  },
+                  "minecraft:item_model": "item_frame",
+                  "minecraft:entity_data": {
+                    "id": "item_frame",
+                    "Tags": [
+                      "EvasiveManuvers.FallingPit"
+                    ],
+                    "Invisible": true,
+                    "Invulnerable": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

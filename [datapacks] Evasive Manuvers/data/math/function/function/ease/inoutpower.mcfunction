@@ -1,0 +1,18 @@
+
+scoreboard players operation Math.temp7 rMath = Math.In0 rMath
+scoreboard players set Math.In02 rMath 1000
+
+
+execute if score Math.temp7 rMath matches ..499 run scoreboard players operation Math.In0 rMath *= #2 rMath
+execute if score Math.temp7 rMath matches ..499 store result score Math.temp0 rMath run function math:function/fast_exponentiation
+execute if score Math.temp7 rMath matches ..499 run scoreboard players operation Math.In0 rMath = Math.temp7 rMath
+execute if score Math.temp7 rMath matches ..499 run return run scoreboard players operation Math.temp0 rMath /= #2 rMath
+
+
+execute if score Math.temp7 rMath matches 500.. run scoreboard players operation Math.In0 rMath *= #-2 rMath
+execute if score Math.temp7 rMath matches 500.. run scoreboard players add Math.In0 rMath 2000
+execute if score Math.temp7 rMath matches 500.. store result score Math.temp0 rMath run function math:function/fast_exponentiation
+execute if score Math.temp7 rMath matches 500.. run scoreboard players operation Math.In0 rMath = Math.temp7 rMath
+execute if score Math.temp7 rMath matches 500.. run scoreboard players operation Math.temp0 rMath /= #-2 rMath
+execute if score Math.temp7 rMath matches 500.. run return run scoreboard players add Math.temp0 rMath 1000
+

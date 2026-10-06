@@ -1,0 +1,36 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:item_frame",
+            "modifier": [
+              {
+                "type": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_data": "{EvasiveManuversSwitchBlock:1b}",
+                  "minecraft:item_name": [
+                    {
+                      "text": "Block Switcher",
+                      "color": "gold"
+                    }
+                  ],
+                  "minecraft:item_model": "lever",
+                  "minecraft:entity_data": {
+                    "id": "item_frame",
+                    "Tags": [
+                      "EvasiveManuvers.BlockSwitcher"
+                    ],
+                    "Invisible": true,
+                    "Invulnerable": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

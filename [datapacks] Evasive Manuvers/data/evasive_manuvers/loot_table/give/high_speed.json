@@ -1,0 +1,41 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:item_frame",
+            "modifier": [
+              {
+                "type": "minecraft:set_components",
+                "components": {
+                  "minecraft:item_name": {
+                    "text": "High Speed",
+                    "color": "aqua"
+                  },
+                  "minecraft:item_model": "evasive_manuvers:item/power_up",
+                  "custom_model_data":{"strings":["high_speed"]},
+                  "minecraft:tooltip_display": {
+                    "hidden_components": [
+                      "dyed_color"
+                    ]
+                  },
+                  "custom_data":{"EvasiveManuversPowerUp":true},
+                  "minecraft:entity_data": {
+                    "id": "item_frame",
+                    "Tags": [
+                      "EvasiveManuvers.PowerUp",
+                      "EvasiveManuvers.1"
+                    ],
+                    "Invisible": true,
+                    "Invulnerable": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "eat":{
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "consumable": {}
+                    } 
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "fptrick_impulse:use/main"
+    }
+}

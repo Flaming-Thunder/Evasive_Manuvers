@@ -1,0 +1,35 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:item_frame",
+            "modifier": [
+              {
+                "type": "minecraft:set_components",
+                "components": {
+                  "minecraft:item_name": {
+                    "text": "Suppressor",
+                    "color": "dark_red"
+                  },
+                  "minecraft:max_stack_size": 1,
+                  "minecraft:custom_data": "{EvasiveManuversSuppressor:1b}",
+                  "minecraft:item_model": "evasive_manuvers:item/suppressor",
+                  "minecraft:entity_data": {
+                    "id": "item_frame",
+                    "Tags": [
+                      "EvasiveManuvers.Suppressor"
+                    ],
+                    "Invisible": true,
+                    "Invulnerable": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

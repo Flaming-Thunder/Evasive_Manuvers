@@ -1,0 +1,13 @@
+{
+    "type": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "weapon.mainhand": {
+                "predicates": {
+                    "consumable": {}
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:item_frame",
+            "modifier": [
+              {
+                "type": "minecraft:set_components",
+                "components": {
+                  "minecraft:item_name": {
+                    "text": "Laser Dust",
+                    "color": "dark_purple"
+                  },
+                  "minecraft:item_model": "evasive_manuvers:item/lazer_dust",
+                  "minecraft:entity_data": {
+                    "id": "item_frame",
+                    "Tags": [
+                      "EvasiveManuvers.LaserDust"
+                    ],
+                    "Invisible": true,
+                    "Invulnerable": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

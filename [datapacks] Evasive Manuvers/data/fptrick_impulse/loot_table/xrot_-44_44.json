@@ -1,0 +1,117 @@
+{"pools":[{"rolls":1,"entries":[{"type":"item","name":"cod","modifier":[
+    "fptrick_impulse:common",
+    {
+        "condition":
+            {"type":"int_value_check","test":{"min":1},"value":{"target":{"type":"fixed","name":"#y"},"type":"score","score":"fptrick_impulse"}}
+        ,
+        "type":"set_enchantments",
+        "enchantments":{
+            "fptrick_impulse:scale0_up_y_plus":{"type":"mul","inputs": [-1,{"target":{"type":"fixed","name":"#y_scale0"},"type":"score","score":"fptrick_impulse"}]},
+            "fptrick_impulse:scale1_up_y_plus":{"target":{"type":"fixed","name":"#y_scale1"},"type":"score","score":"fptrick_impulse"},
+            "fptrick_impulse:scale2_up_y_plus":{"target":{"type":"fixed","name":"#y_scale2"},"type":"score","score":"fptrick_impulse"},
+            "fptrick_impulse:scale3_up_y_plus":{"target":{"type":"fixed","name":"#y_scale3"},"type":"score","score":"fptrick_impulse"}
+        }
+    },
+    {
+        "condition":
+            {"type":"int_value_check","test":{"max":-1},"value":{"target":{"type":"fixed","name":"#y"},"type":"score","score":"fptrick_impulse"}}
+        ,
+        "type":"set_enchantments",
+        "enchantments":{
+            "fptrick_impulse:scale0_up_y_minus":{"type":"mul","inputs": [-1,{"target":{"type":"fixed","name":"#y_scale0"},"type":"score","score":"fptrick_impulse"}]},
+            "fptrick_impulse:scale1_up_y_minus":{"target":{"type":"fixed","name":"#y_scale1"},"type":"score","score":"fptrick_impulse"},
+            "fptrick_impulse:scale2_up_y_minus":{"target":{"type":"fixed","name":"#y_scale2"},"type":"score","score":"fptrick_impulse"},
+            "fptrick_impulse:scale3_up_y_minus":{"target":{"type":"fixed","name":"#y_scale3"},"type":"score","score":"fptrick_impulse"}
+        }
+    },
+    {
+        "condition":{"type":"all_of","terms":[
+            {"type":"int_value_check","test":0,"value":{"target":{"type":"fixed","name":"#left_z_sign"},"type":"score","score":"fptrick_impulse"}},
+            {"type":"any_of","terms":[
+                    {"type":"all_of","terms":[
+                        {"type":"int_value_check","test":1,"value":{"target":{"type":"fixed","name":"#left_x_sign"},"type":"score","score":"fptrick_impulse"}},
+                        {"type":"int_value_check","test":{"min":1},"value":{"target":{"type":"fixed","name":"#z"},"type":"score","score":"fptrick_impulse"}}
+                ]},
+            {"type":"all_of","terms":[
+                    {"type":"int_value_check","test":-1,"value":{"target":{"type":"fixed","name":"#left_x_sign"},"type":"score","score":"fptrick_impulse"}},
+                    {"type":"int_value_check","test":{"max":-1},"value":{"target":{"type":"fixed","name":"#z"},"type":"score","score":"fptrick_impulse"}}
+    
+            ]}
+        ]}
+            ]},
+        "type":"set_enchantments",
+        "enchantments":{
+            "fptrick_impulse:scale0_forward_z_plus":{"type":"mul","inputs": [-1,{"target":{"type":"fixed","name":"#z_scale0"},"type":"score","score":"fptrick_impulse"}]},
+            "fptrick_impulse:scale1_forward_z_plus":{"target":{"type":"fixed","name":"#z_scale1"},"type":"score","score":"fptrick_impulse"},
+            "fptrick_impulse:scale2_forward_z_plus":{"target":{"type":"fixed","name":"#z_scale2"},"type":"score","score":"fptrick_impulse"},
+            "fptrick_impulse:scale3_forward_z_plus":{"target":{"type":"fixed","name":"#z_scale3"},"type":"score","score":"fptrick_impulse"}
+        }
+    },
+    {
+        "condition":{"type":"all_of","terms":[
+            {"type":"int_value_check","test":0,"value":{"target":{"type":"fixed","name":"#left_z_sign"},"type":"score","score":"fptrick_impulse"}},
+            {"type":"any_of","terms":[
+                {"type":"all_of","terms":[
+                    {"type":"int_value_check","test":1,"value":{"target":{"type":"fixed","name":"#left_x_sign"},"type":"score","score":"fptrick_impulse"}},
+                    {"type":"int_value_check","test":{"max":-1},"value":{"target":{"type":"fixed","name":"#z"},"type":"score","score":"fptrick_impulse"}}
+                ]},
+                {"type":"all_of","terms":[
+                    {"type":"int_value_check","test":-1,"value":{"target":{"type":"fixed","name":"#left_x_sign"},"type":"score","score":"fptrick_impulse"}},
+                    {"type":"int_value_check","test":{"min":1},"value":{"target":{"type":"fixed","name":"#z"},"type":"score","score":"fptrick_impulse"}}
+                ]}
+            ]}
+        ]},
+        "type":"set_enchantments",
+        "enchantments":{
+            "fptrick_impulse:scale0_forward_z_minus":{"type":"mul","inputs": [-1,{"target":{"type":"fixed","name":"#z_scale0"},"type":"score","score":"fptrick_impulse"}]},
+            "fptrick_impulse:scale1_forward_z_minus":{"target":{"type":"fixed","name":"#z_scale1"},"type":"score","score":"fptrick_impulse"},
+            "fptrick_impulse:scale2_forward_z_minus":{"target":{"type":"fixed","name":"#z_scale2"},"type":"score","score":"fptrick_impulse"},
+            "fptrick_impulse:scale3_forward_z_minus":{"target":{"type":"fixed","name":"#z_scale3"},"type":"score","score":"fptrick_impulse"}
+        }
+    },
+    {
+        "condition":{"type":"all_of","terms":[
+            {"type":"int_value_check","test":0,"value":{"target":{"type":"fixed","name":"#left_x_sign"},"type":"score","score":"fptrick_impulse"}},
+            {"type":"any_of","terms":[
+                {"type":"all_of","terms":[
+                    {"type":"int_value_check","test":1,"value":{"target":{"type":"fixed","name":"#left_z_sign"},"type":"score","score":"fptrick_impulse"}},
+                    {"type":"int_value_check","test":{"min":1},"value":{"target":{"type":"fixed","name":"#x"},"type":"score","score":"fptrick_impulse"}}
+                ]},
+                {"type":"all_of","terms":[
+                    {"type":"int_value_check","test":-1,"value":{"target":{"type":"fixed","name":"#left_z_sign"},"type":"score","score":"fptrick_impulse"}},
+                    {"type":"int_value_check","test":{"max":-1},"value":{"target":{"type":"fixed","name":"#x"},"type":"score","score":"fptrick_impulse"}}
+                ]}
+            ]}
+        ]},
+        "type":"set_enchantments",
+        "enchantments":{
+            "fptrick_impulse:scale0_forward_x_minus":{"type":"mul","inputs": [-1,{"target":{"type":"fixed","name":"#x_scale0"},"type":"score","score":"fptrick_impulse"}]},
+            "fptrick_impulse:scale1_forward_x_minus":{"target":{"type":"fixed","name":"#x_scale1"},"type":"score","score":"fptrick_impulse"},
+            "fptrick_impulse:scale2_forward_x_minus":{"target":{"type":"fixed","name":"#x_scale2"},"type":"score","score":"fptrick_impulse"},
+            "fptrick_impulse:scale3_forward_x_minus":{"target":{"type":"fixed","name":"#x_scale3"},"type":"score","score":"fptrick_impulse"}
+        }
+    },
+    {
+        "condition":{"type":"all_of","terms":[
+            {"type":"int_value_check","test":0,"value":{"target":{"type":"fixed","name":"#left_x_sign"},"type":"score","score":"fptrick_impulse"}},
+            {"type":"any_of","terms":[
+                {"type":"all_of","terms":[
+                    {"type":"int_value_check","test":1,"value":{"target":{"type":"fixed","name":"#left_z_sign"},"type":"score","score":"fptrick_impulse"}},
+                    {"type":"int_value_check","test":{"max":-1},"value":{"target":{"type":"fixed","name":"#x"},"type":"score","score":"fptrick_impulse"}}
+                ]},
+                {"type":"all_of","terms":[
+                    {"type":"int_value_check","test":-1,"value":{"target":{"type":"fixed","name":"#left_z_sign"},"type":"score","score":"fptrick_impulse"}},
+                    {"type":"int_value_check","test":{"min":1},"value":{"target":{"type":"fixed","name":"#x"},"type":"score","score":"fptrick_impulse"}}
+                ]}
+            ]}
+        ]},
+        "type":"set_enchantments",
+        "enchantments":{
+            "fptrick_impulse:scale0_forward_x_plus":{"type":"mul","inputs": [-1,{"target":{"type":"fixed","name":"#x_scale0"},"type":"score","score":"fptrick_impulse"}]},
+            "fptrick_impulse:scale1_forward_x_plus":{"target":{"type":"fixed","name":"#x_scale1"},"type":"score","score":"fptrick_impulse"},
+            "fptrick_impulse:scale2_forward_x_plus":{"target":{"type":"fixed","name":"#x_scale2"},"type":"score","score":"fptrick_impulse"},
+            "fptrick_impulse:scale3_forward_x_plus":{"target":{"type":"fixed","name":"#x_scale3"},"type":"score","score":"fptrick_impulse"}
+        }
+    }
+]}]}]}
+

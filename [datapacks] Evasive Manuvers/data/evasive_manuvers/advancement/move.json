@@ -1,0 +1,12 @@
+
+
+  {
+    "criteria": { "use_item": {
+      "trigger": "using_item",
+      "conditions": { "item": { "predicates": {
+        "minecraft:custom_data": {"EvasiveManuversMoveTool":true}
+      }}}
+    }},
+    "rewards": { "function": "evasive_manuvers:system/tool/move/use" }
+  }
+  

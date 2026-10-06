@@ -1,0 +1,39 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:item_frame",
+            "modifier": [
+              {
+                "type": "minecraft:set_components",
+                "components": {
+                  "minecraft:item_name":  [{
+                    "text": "Laser",
+                    "color": "dark_purple"
+                  },{
+                    "text": " (Interactable)",
+                    "color": "gray",
+                    "bold": true
+                  }],
+                  "minecraft:item_model": "evasive_manuvers:item/lazer",
+                  "custom_model_data": {"strings": ["Interactable"]},
+                  "minecraft:entity_data": {
+                    "id": "item_frame",
+                    "Tags": [
+                      "EvasiveManuvers.Laser",
+                      "EvasiveManuvers.Interactable"
+                    ],
+                    "Invisible": true,
+                    "Invulnerable": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

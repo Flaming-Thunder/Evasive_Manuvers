@@ -1,0 +1,42 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:item_frame",
+            "modifier": [
+              {
+                "type": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_data": "{EvasiveManuversSwitchBlock:1b}",
+                  "minecraft:item_name": [
+                    {
+                      "text": "Switch Block",
+                      "color": "gold"
+                    },
+                    {
+                      "text": " (off)",
+                      "color": "gray",
+                      "bold": true
+                    }
+                  ],
+                  "minecraft:item_model": "nether_bricks",
+                  "minecraft:entity_data": {
+                    "id": "item_frame",
+                    "Tags": [
+                      "EvasiveManuvers.AutoSwitchBlock",
+                      "EvasiveManuvers.Off"
+                    ],
+                    "Invisible": true,
+                    "Invulnerable": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

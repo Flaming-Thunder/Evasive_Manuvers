@@ -1,0 +1,14 @@
+{
+    "type": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "type_specific/player": {
+            "looking_at": {
+                "entity_type": "interaction",
+                    "entity_tags": {
+                        "any_of": ["EvasiveManuvers.BlockRange"]
+                    }
+            }
+        }
+    }
+}

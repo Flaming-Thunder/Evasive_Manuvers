@@ -1,0 +1,8 @@
+{
+    "values": [
+        "evasive_manuvers:system/load",
+        "buttons:load",
+        "math:setup",
+        "fptrick_impulse:load"
+    ]
+}

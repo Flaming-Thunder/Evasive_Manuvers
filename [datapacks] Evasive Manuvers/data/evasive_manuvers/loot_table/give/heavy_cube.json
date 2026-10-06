@@ -1,0 +1,41 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:item_frame",
+            "modifier": [
+              {
+                "type": "minecraft:set_components",
+                "components": {
+                  "minecraft:item_name": {
+                    "text": "Heavy Cube",
+                    "color": "gray",
+                    "bold": true
+                  },
+                  "lore":[
+                    {"text":"Can be Pushed Around","color":"#ddcbee","italic": false},
+                    [{"text":"[Shift Right Click] ","color":"#b1d5f0","italic": false},{"text":"To Push!","color":"#ddcbee","italic": false,"underlined": true}],
+                    {"text":""},
+                    {"text":"“Totally an Original Idea”","color":"#ffffff","italic": false},
+                    [{"text":"Performance  -  ","color":"#c9c9c9","italic": false,"font":"evasive_manuvers:small"},{"text":"⭐⭐","color":"#ff9900"},{"text":"⭐⭐⭐"}]
+                  ],
+                  "minecraft:item_model": "evasive_manuvers:block/heavy_cube",
+                  "minecraft:entity_data": {
+                    "id": "item_frame",
+                    "Tags": [
+                      "EvasiveManuvers.HeavyCube"
+                    ],
+                    "Invisible": true,
+                    "Invulnerable": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

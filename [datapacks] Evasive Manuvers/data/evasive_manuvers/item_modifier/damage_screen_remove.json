@@ -1,0 +1,8 @@
+{ 
+    "type": "set_components",
+    "components": {
+        "equippable": {
+            "slot": "head"
+        }
+    }
+}

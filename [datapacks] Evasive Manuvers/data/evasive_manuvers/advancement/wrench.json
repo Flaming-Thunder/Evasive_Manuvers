@@ -1,0 +1,12 @@
+
+
+  {
+    "criteria": { "use_item": {
+      "trigger": "using_item",
+      "conditions": { "item": { "predicates": {
+        "minecraft:custom_data": {"EvasiveManuversWrench":true}
+      }}}
+    }},
+    "rewards": { "function": "evasive_manuvers:system/wrench/use" }
+  }
+  

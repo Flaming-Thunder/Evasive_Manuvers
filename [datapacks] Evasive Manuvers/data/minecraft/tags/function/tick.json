@@ -1,0 +1,8 @@
+{
+    "values": [
+        "evasive_manuvers:system/tick",
+        "buttons:tick",
+        "fptrick_impulse:tick"
+    ]
+}
+

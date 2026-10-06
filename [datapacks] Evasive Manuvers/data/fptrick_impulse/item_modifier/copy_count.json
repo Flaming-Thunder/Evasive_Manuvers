@@ -1,0 +1,9 @@
+
+{
+    "type": "set_count",
+    "count": {
+        "type": "storage",
+        "storage": "fptrick:math",
+        "path": "count"
+    }
+}

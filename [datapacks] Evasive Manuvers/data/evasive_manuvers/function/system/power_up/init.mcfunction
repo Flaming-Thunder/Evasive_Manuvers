@@ -1,0 +1,9 @@
+execute if entity @s[tag=EvasiveManuvers.1] at @s align xyz positioned ~0.5 ~ ~0.5 unless entity @e[distance=..0.5,tag=EvasiveManuvers.Element] run summon item_display ~ ~ ~ {data:{name:"Default",ElementName:"High Speed"},Tags:["EvasiveManuvers.Element","EvasiveManuvers.PowerUp","EvasiveManuvers.1"],brightness:{block:15,sky:15},item:{id:"leather_boots",count:1,components:{"minecraft:item_model":"evasive_manuvers:item/power_up","minecraft:custom_model_data":{strings:["high_speed"]}}},interpolation_duration:10,transformation:{left_rotation:[0,0,0,1],right_rotation:[0,0,0,1],scale:[1,1,1],translation:[0,0.5,0]}}
+execute if entity @s[tag=EvasiveManuvers.2] at @s align xyz positioned ~0.5 ~ ~0.5 unless entity @e[distance=..0.5,tag=EvasiveManuvers.Element] run summon item_display ~ ~ ~ {data:{name:"Default",ElementName:"High Jump"},Tags:["EvasiveManuvers.Element","EvasiveManuvers.PowerUp","EvasiveManuvers.2"],brightness:{block:15,sky:15},item:{id:"leather_boots",count:1,components:{"minecraft:item_model":"evasive_manuvers:item/power_up","minecraft:custom_model_data":{strings:["high_jump"]}}},interpolation_duration:10,transformation:{left_rotation:[0,0,0,1],right_rotation:[0,0,0,1],scale:[1,1,1],translation:[0,0.5,0]}}
+execute if entity @s[tag=EvasiveManuvers.3] at @s align xyz positioned ~0.5 ~ ~0.5 unless entity @e[distance=..0.5,tag=EvasiveManuvers.Element] run summon item_display ~ ~ ~ {data:{name:"Default",ElementName:"Double Jump"},Tags:["EvasiveManuvers.Element","EvasiveManuvers.PowerUp","EvasiveManuvers.3"],brightness:{block:15,sky:15},item:{id:"leather_boots",count:1,components:{"minecraft:item_model":"evasive_manuvers:item/power_up","minecraft:custom_model_data":{strings:["air_jump"]}}},interpolation_duration:10,transformation:{left_rotation:[0,0,0,1],right_rotation:[0,0,0,1],scale:[1,1,1],translation:[0,0.5,0]}}
+
+
+
+kill @s
+
+

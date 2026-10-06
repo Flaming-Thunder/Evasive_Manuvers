@@ -1,0 +1,46 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:item_frame",
+            "modifier": [
+              {
+                "type": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_data": "{EvasiveManuversSnakeBlock:1b}",
+                  "minecraft:item_name": [
+                    {
+                      "text": "Hit Block",
+                      "color": "gold"
+                    },
+                    {
+                      "text": " (0.50s | Non Interactable)",
+                      "color": "gray",
+                      "bold": true
+                    }
+                  ],
+                  "minecraft:item_model": "evasive_manuvers:block/hit_block",
+                  "custom_model_data":{"strings": ["NonInteractable","1"]},
+                  "minecraft:entity_data": {
+                    "id": "item_frame",
+                    "Tags": [
+                      "EvasiveManuvers.SnakeBlock",
+                      "EvasiveManuvers.NonInteractable"
+                    ],
+                    "data": {
+                      "time": 10
+                    },
+                    "Invisible": true,
+                    "Invulnerable": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

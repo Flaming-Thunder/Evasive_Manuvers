@@ -1,0 +1,3 @@
+loot give @s loot evasive_manuvers:give/supressor
+
+
